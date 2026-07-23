@@ -1,0 +1,23 @@
+{
+    "name": "Foci Tipp - Elemzo",
+    "short_name": "FociTipp",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#1E8E3E",
+    "theme_color": "#1E8E3E",
+    "description": "Foci elemzo app AI tipp ajanlassal",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "icons/Icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
