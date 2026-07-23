@@ -1,0 +1,92 @@
+import '../models/match.dart';
+
+/// Teszt/minta meccsadatok, amig nincs bekotve elo API.
+final List<Match> mockMatches = [
+  Match(
+    id: 'm1',
+    league: 'NB I',
+    country: 'Magyarorszag',
+    kickoff: DateTime.now().add(const Duration(hours: 3)),
+    home: const TeamStats(
+      name: 'Ferencvaros',
+      lastForm: ['W', 'W', 'D', 'W', 'W'],
+      avgGoalsScored: 2.1,
+      avgGoalsConceded: 0.8,
+      leaguePosition: 1,
+    ),
+    away: const TeamStats(
+      name: 'Puskas Akademia',
+      lastForm: ['L', 'W', 'D', 'L', 'D'],
+      avgGoalsScored: 1.2,
+      avgGoalsConceded: 1.5,
+      leaguePosition: 6,
+    ),
+    h2h: const HeadToHead(
+      homeWins: 5,
+      draws: 2,
+      awayWins: 1,
+      avgTotalGoals: 3.1,
+    ),
+    odds1: '1.35',
+    oddsX: '4.60',
+    odds2: '7.50',
+  ),
+  Match(
+    id: 'm2',
+    league: 'Premier League',
+    country: 'Anglia',
+    kickoff: DateTime.now().add(const Duration(hours: 6)),
+    home: const TeamStats(
+      name: 'Arsenal',
+      lastForm: ['W', 'D', 'W', 'W', 'L'],
+      avgGoalsScored: 2.0,
+      avgGoalsConceded: 1.0,
+      leaguePosition: 2,
+    ),
+    away: const TeamStats(
+      name: 'Newcastle',
+      lastForm: ['W', 'W', 'L', 'D', 'W'],
+      avgGoalsScored: 1.8,
+      avgGoalsConceded: 1.1,
+      leaguePosition: 5,
+    ),
+    h2h: const HeadToHead(
+      homeWins: 3,
+      draws: 3,
+      awayWins: 2,
+      avgTotalGoals: 2.8,
+    ),
+    odds1: '1.90',
+    oddsX: '3.60',
+    odds2: '4.10',
+  ),
+  Match(
+    id: 'm3',
+    league: 'La Liga',
+    country: 'Spanyolorszag',
+    kickoff: DateTime.now().add(const Duration(hours: 26)),
+    home: const TeamStats(
+      name: 'Real Madrid',
+      lastForm: ['W', 'W', 'W', 'D', 'W'],
+      avgGoalsScored: 2.4,
+      avgGoalsConceded: 0.7,
+      leaguePosition: 1,
+    ),
+    away: const TeamStats(
+      name: 'Real Sociedad',
+      lastForm: ['D', 'L', 'W', 'L', 'D'],
+      avgGoalsScored: 1.1,
+      avgGoalsConceded: 1.3,
+      leaguePosition: 9,
+    ),
+    h2h: const HeadToHead(
+      homeWins: 6,
+      draws: 1,
+      awayWins: 1,
+      avgTotalGoals: 3.4,
+    ),
+    odds1: '1.25',
+    oddsX: '5.50',
+    odds2: '9.00',
+  ),
+];
